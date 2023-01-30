@@ -17,8 +17,9 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
 
+<body>
+  <div class="overlay"></div>
   <div class="container">
     <header class="header">
       <div class="logo">
@@ -40,8 +41,46 @@
       </nav>
 
       <div class="user-screen">
-        <img src="/images/icon-cart.svg" alt="carrinho">
-        <img width="45px" src="/images/image-avatar.png" alt="">
+        <div class="cart">
+          <img class="cart-img" src="/images/icon-cart.svg" alt="carrinho">
+          <p class="cart-counter on">
+            1
+          </p>
+        </div>
+        <img class="user" src="/images/image-avatar.png" alt="">
+        <!-- <div class="open-cart">
+          <header class="header-open-cart">
+            <span class="title-open-cart">
+              Carrinho
+            </span>
+            <div class="line"></div>
+          </header>
+          <div class="empty-cart">
+            <p>
+              Seu carrinho está vazio.
+            </p>
+          </div>
+          <div class="full-cart">
+            <div class="product-cart">
+              <img class="img-product-cart" src="/images/image-product-1-thumbnail.jpg" alt="tênis">
+              <div class="product-cart-description">
+                <p class="title-product-cart">
+                  Tênis edição limitada de outono
+                </p>
+                <span class="unit-price">
+                  R$ 125,00 x 3
+                </span>
+                <span class="total-price">
+                  $375,00
+                </span>
+              </div>
+              <img class="delete-product" src="/images/icon-delete.svg" alt="">
+            </div>
+            <button class="orange-button">
+              <span>Checkout</span>
+            </button>
+          </div>
+        </div> -->
       </div>
     </header>
 
@@ -82,22 +121,24 @@
             <p class="old-price-product">R$ 250,00</p>
           </div>
         </div>
+        <footer class="product-footer">
+          <div class="product-counter">
+            <button class="less">
+              <img src="/images/icon-minus.svg" alt="">
+            </button>
+            <span class="counter-number">0</span>
+            <button class="more">
+              <img src="/images/icon-plus.svg" alt="">
+            </button>
+          </div>
+          <button class="orange-button">
+            <img src="/images/icon-white-cart.svg" alt="">
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </footer>
       </div>
     </div>
   </div>
-
-  <!-- Sneaker Company
-
-  
-
-  
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
