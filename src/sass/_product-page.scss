@@ -9,13 +9,13 @@
     .main-image {
       
       :active {
-        border: 3px solid #ff7d1a;
-        opacity: 0.4;
+        border: 2px solid #ff7d1a;
       }
 
       img {
         width: 450px;
         border-radius: 10px;
+        cursor: pointer;
       }
     }
     
@@ -27,11 +27,11 @@
       img {
         width: 100px;
         border-radius: 10px;
+        cursor: pointer;
       }
 
       :active {
         border: 2px solid #ff7d1a;
-        opacity: 0.4;
       }
     }
   }
@@ -123,14 +123,15 @@
     }
   }
 
-  .show-imgs {
+  .open-imgs {
+    display: none;
     z-index: 11;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    .main-show {
+    .main-open {
       position: relative;
 
       .main-img {
@@ -141,6 +142,7 @@
       }
 
       .icon-close {
+        cursor: pointer;
         position: absolute;
         top: -5%;
         right: 0;
@@ -157,6 +159,7 @@
         top: 45%;
         left: -4%;
         z-index: 3;
+        cursor: pointer;
   
         img {
           position: absolute;
@@ -174,6 +177,7 @@
         top: 45%;
         right: -4%;
         z-index: 3;
+        cursor: pointer;
   
         img {
           position: absolute;
@@ -183,14 +187,18 @@
       }
     }
 
-    .small-imgs {
+    .small-imgs-open {
       text-align: center;
-      margin-top: 25px;
+      margin-top: 40px;
 
       img {
         width: 95px;
         border-radius: 10px;
         margin: 0px 10px 0px 10px;
+        cursor: pointer;
+        &:active {
+          border: 2px solid #ff7d1a;
+        }
       }
     }
   }
