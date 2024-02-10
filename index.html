@@ -40,15 +40,16 @@
         </ul>
       </nav>
 
-      <div class="user-screen">
+      <div class="user-area">
         <div class="cart">
           <img class="cart-img" src="/images/icon-cart.svg" alt="carrinho">
+          <img src="/images/icon-orange-cart.svg" alt="">
           <p class="cart-counter on">
-            1
+            
           </p>
         </div>
-        <img class="user" src="/images/image-avatar.png" alt="">
-        <!-- <div class="open-cart">
+        
+        <div class="open-cart">
           <header class="header-open-cart">
             <span class="title-open-cart">
               Carrinho
@@ -68,10 +69,10 @@
                   Tênis edição limitada de outono
                 </p>
                 <span class="unit-price">
-                  R$ 125,00 x 3
+                  R$ 125,00 x <span class="unit-product"></span>
                 </span>
                 <span class="total-price">
-                  $375,00
+                  
                 </span>
               </div>
               <img class="delete-product" src="/images/icon-delete.svg" alt="">
@@ -80,7 +81,18 @@
               <span>Checkout</span>
             </button>
           </div>
-        </div> -->
+        </div>
+
+        <div class="user-screen">
+          <img class="user" src="/images/image-avatar.png" alt="">
+          <div class="user-options">
+            <ul>
+              <li><a href="#">Minha conta</a></li>
+              <li><a href="#">Meus pedidos</a></li>
+              <li><a href="#">Ajuda</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -92,10 +104,10 @@
           <img class="images-open" width="300px" src="/images/image-product-1.jpg" alt="">
         </div>
         <div class="small-images">
-          <img class="images-open" src="/images/image-product-1-thumbnail.jpg" alt="">
-          <img class="images-open" src="/images/image-product-2-thumbnail.jpg" alt="">
-          <img class="images-open" src="/images/image-product-3-thumbnail.jpg" alt="">
-          <img class="images-open" src="/images/image-product-4-thumbnail.jpg" alt="">
+          <img class="images-open img-1" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img class="images-open img-2" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img class="images-open img-3" src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img class="images-open img-4" src="/images/image-product-4-thumbnail.jpg" alt="">
         </div>
       </div>
       <div class="product-description">
@@ -122,19 +134,21 @@
           </div>
         </div>
         <footer class="product-footer">
-          <div class="product-counter">
-            <button class="less">
-              <img src="/images/icon-minus.svg" alt="">
+          <form class="product-form" action="#">
+            <div class="product-counter">
+              <button class="less">
+                <img src="/images/icon-minus.svg" alt="">
+              </button>
+              <span class="counter-number">0</span>
+              <button class="more">
+                <img src="/images/icon-plus.svg" alt="">
+              </button>
+            </div>
+            <button type="submit" class="orange-button add-cart">
+              <img src="/images/icon-white-cart.svg" alt="">
+              <span>Adicionar ao carrinho</span>
             </button>
-            <span class="counter-number">0</span>
-            <button class="more">
-              <img src="/images/icon-plus.svg" alt="">
-            </button>
-          </div>
-          <button class="orange-button">
-            <img src="/images/icon-white-cart.svg" alt="">
-            <span>Adicionar ao carrinho</span>
-          </button>
+          </form>
         </footer>
       </div>
       <div class="open-imgs">
@@ -145,17 +159,17 @@
             <img src="/images/icon-previous.svg" alt="">
           </div>
           
-          <img class="main-img" src="images/image-product-1.jpg" alt="">
+          <img class="main-open-img" src="images/image-product-1.jpg" alt="">
 
           <div class="arrow-next">
             <img src="/images/icon-next.svg" alt="">
           </div>
         </div>
         <div class="small-imgs-open">
-          <img src="/images/image-product-1-thumbnail.jpg" alt="">
-          <img src="/images/image-product-2-thumbnail.jpg" alt="">
-          <img src="/images/image-product-3-thumbnail.jpg" alt="">
-          <img src="/images/image-product-4-thumbnail.jpg" alt="">
+          <img class="open-img" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img class="open-img" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img class="open-img" src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img class="open-img" src="/images/image-product-4-thumbnail.jpg" alt="">
         </div>
       </div>
     </div>
