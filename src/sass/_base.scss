@@ -34,6 +34,10 @@ ul li {
 }
 
 .container {
+  @media screen and (max-width: 868px) {
+    padding: 0;
+  }
+
   max-width: 1440px;
   padding: 0 80px;
   margin: 0 auto;
